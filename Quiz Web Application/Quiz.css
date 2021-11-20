@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    background-color: #a6d1ff;
+    padding: 0;
+    font-family: 'Yaldevi', sans-serif;
+}
+/* div,button {
+    
+} */
+.start_btn {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    /* position: relative; */
+    transform: translate(-50%, -50%);
+}
+/*  visibility: hidden; the quiz btn, down below */
+.start_btn #StartBtn{
+    padding: 5px 5px 5px 5px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    /* margin: 0%; */
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    transition: ease-in-out 0.23s;
+    cursor: pointer;
+}
+#StartBtn:hover {
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+} 
+
+#Rules, #my-btns {
+    position: absolute;
+    
+}
+#Rules {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+#my-btns {
+    /* margin-top: 5px; */
+    top: 67%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+}
+
+#my-btns .Conbtn{
+    padding: 5px 5px 5px 5px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    /* margin: 0%; */
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    transition: ease-in-out 0.23s;
+    cursor: pointer;
+}
+#my-btns .Conbtn:hover {
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+}
+#rule{
+    font-size: 1.3em;
+    font-family:'Raleway', sans-serif;
+    color: #222;
+    text-decoration: underline #333;
+    font-weight: bold;
+}
+#Rules, .intro, .info {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+}
+ 
+.sec  {
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.cant {
+    font-size: 1.34rem;
+    color: aliceblue;
+    font-family: monospace;
+}
+.num {
+    font-size: 1.41rem;
+    color: #f4f4f6;
+    font-family: cursive;
+}
+
+/* Done editing the rules now hiding them to edit the quiz questions*/
+
+
+
+
+/* now styling the questions area */
+
+#option_list1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+#option_list1 .option {
+   /* border: 1px solid rgb(0, 0, 0); */
+   padding: 2px;
+   cursor: pointer;
+   border-radius: 5px;
+
+}
+
+
+#que_text1 span{
+    top: 35%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-decoration: underline rgb(0, 0, 0);
+}
+
+
+.option span:hover {
+   color: #fff;
+}
+/* #ans_btn {
+    top: 67%;
+    left: 41.5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+#ans_btn .NBtn{
+   padding: 5px 5px 5px 5px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    transition: ease-in-out 0.23s;
+    cursor: pointer;
+    
+}
+#ans_btn .NBtn:hover{
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+} */
+
+.option span {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: ease-in-out 0.2s;
+border-radius: 4px;
+color: black;
+font-family:'Source Sans Pro', sans-serif !important;
+}
+
+
+
+/* Styling the Question 2~ */
+
+#option_list2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+#option_list2 .option {
+   /* border: 1px solid rgb(0, 0, 0); */
+   padding: 2px;
+   cursor: pointer;
+   border-radius: 5px;
+   width: 325px;
+}
+
+#que_text2 span{
+    top: 35%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-decoration: underline rgb(0, 0, 0);
+}
+
+
+.option span:hover {
+   color: #fff;
+}
+
+.option span {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: ease-in-out 0.2s;
+border-radius: 4px;
+color: black;
+font-family:'Source Sans Pro', sans-serif !important;
+}
+
+/* Now Styling the Question 3 */
+
+
+#option_list3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+#option_list3 .option {
+   /* border: 1px solid rgb(0, 0, 0); */
+   padding: 2px;
+   cursor: pointer;
+   border-radius: 5px;
+   width: 325px;
+}
+
+#que_text3 span{
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-decoration: underline rgb(0, 0, 0);
+}
+
+
+.option span:hover {
+   color: #fff;
+}
+
+.option span {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: ease-in-out 0.2s;
+border-radius: 4px;
+color: black;
+font-family:'Source Sans Pro', sans-serif !important;
+}
+
+
+/* Styling Question 4 */
+
+#option_list4 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+#option_list4 .option {
+   /* border: 1px solid rgb(0, 0, 0); */
+   padding: 2px;
+   cursor: pointer;
+   border-radius: 5px;
+   width: 325px;
+}
+
+#que_text4 span{
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-decoration: underline rgb(0, 0, 0);
+}
+
+
+.option span:hover {
+   color: #fff;
+}
+
+.option span {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: ease-in-out 0.2s;
+border-radius: 4px;
+color: black;
+font-family:'Source Sans Pro', sans-serif !important;
+}
+
+/* Styling the Question Number 5 */
+
+
+#option_list5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+#option_list5 .option {
+   /* border: 1px solid rgb(0, 0, 0); */
+   padding: 2px;
+   cursor: pointer;
+   border-radius: 5px;
+   width: 325px;
+}
+
+#que_text5 span{
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-decoration: underline rgb(0, 0, 0);
+}
+
+
+.option span:hover {
+   color: #fff;
+}
+
+.option span {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: ease-in-out 0.2s;
+border-radius: 4px;
+color: black;
+font-family:'Source Sans Pro', sans-serif !important;
+}
+
+/* Next q 1 */
+#NextBtn {
+    top: 67%;
+    left: 41.5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+#NextBtn #Nxt{
+   padding: 5px 5px 5px 5px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    transition: ease-in-out 0.23s;
+    cursor: pointer;
+    
+}
+#NextBtn #Nxt:hover{
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+}
+
+ #NextBtn {
+     display: none; 
+}
+
+
+/* Next q 2 */
+#NextBtn2 {
+    top: 67%;
+    left: 41.5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+#NextBtn2 #Nxt2{
+   padding: 5px 5px 5px 5px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    transition: ease-in-out 0.23s;
+    cursor: pointer;
+    
+}
+#NextBtn2 #Nxt2:hover{
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+}
+
+ #NextBtn2 {
+     display: none; 
+}
+
+
+
+/* Next q3 */
+#NextBtn3 {
+    top: 67%;
+    left: 41.5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+#NextBtn3 #Nxt3{
+   padding: 5px 5px 5px 5px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    transition: ease-in-out 0.23s;
+    cursor: pointer;
+    
+}
+#NextBtn3 #Nxt3:hover{
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+}
+
+ #NextBtn3 {
+     display: none; 
+}
+
+
+
+/* Next q 4 */
+
+#NextBtn4 {
+    top: 67%;
+    left: 41.5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+#NextBtn4 #Nxt4{
+   padding: 5px 5px 5px 5px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    transition: ease-in-out 0.23s;
+    cursor: pointer;
+    
+}
+#NextBtn4 #Nxt4:hover{
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+}
+
+ #NextBtn4 {
+     display: none; 
+}
+
+
+
+/* Next Q 5 */
+
+#NextBtn5 {
+    top: 67%;
+    left: 41.5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+#NextBtn5 #Nxt5{
+   padding: 5px 5px 5px 5px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    transition: ease-in-out 0.23s;
+    cursor: pointer;
+    
+}
+#NextBtn5 #Nxt5:hover{
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+}
+
+ #NextBtn5 {
+     display: none; 
+}
+
+#results {
+    display: block; 
+}
+
+
+#results {
+    color: #222;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* making all the divs visible/hidden here */
+
+
+
+
+.start_btn {
+    display: block;
+}
+#Rules, #my-btns {
+    display: none;
+}
+/* #ans_btn {
+
+ 
+} */
+#option_list1, #que_text1 {
+    display: none;
+}
+#option_list2, #que_text2 {
+    display: none;
+}
+#option_list3, #que_text3 {
+    display: none;
+}
+#option_list4, #que_text4 {
+    display: none;
+}
+#option_list5, #que_text5 {
+    display: none;
+}
+
+
+
+

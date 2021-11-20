@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Web Application</title>
+    <link rel="stylesheet" href="Quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yaldevi&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Quiz Start Button -->
+   <div class="start_btn"><button id="StartBtn" onclick="Quiz()">Start Quiz</button></div>
+
+
+
+
+   <!-- Rules List -->
+
+<div id="Rules">
+    <div class="intro"><span class="rule">Some Rules of the Quiz:-</span></div>
+    <div class="info">1. You have Only <span class="sec">60 Seconds</span> to solve each question.</div>
+    <div class="info">2. Once you select your answer <span class="cant">can't change it back.</span></div>
+    <div class="info">3. There are total <span class="num">5 questions</span> to solve.</div>
+    
+</div>
+<div id="my-btns">
+    <button class="Conbtn" onclick="ClickedContinueBtn()">Continue</button>
+</div>
+<!-- i will be using display block css property to make the button when clicked disappear -->
+
+
+
+<!-- Question Number 1 -->
+<div id="que_text1">
+    <span>Q1. What does HTML stand for ?</span>
+</div>
+<div id="option_list1">
+    <label class="option">
+        
+        <input type="radio" name="quiz" id="1" value="Home Tool Markup Language">
+        <span>Home Tool Markup Language</span>
+    </label>
+    <br>
+    <label class="option">
+        <input type="radio" name="quiz" id="2" value="Hyperlinks and Text Markup Language">
+        <span>Hyperlinks and Text Markup Language</span>
+    </label>
+    <br>
+    <label class="option">
+        <input type="radio" name="quiz" id="3" value="Text Markup Language">
+        <span>Text Markup Language</span>
+    </label>
+    
+</div>
+
+
+
+ <div id="que_text2">
+    <span>Q2. Who is making the Web standards?</span>
+</div>
+<div id="option_list2">
+    <label class="option">
+        
+        <input type="radio" name="quizz" id="1" value="Microsoft">
+        <span>Microsoft</span>
+    </label>
+    <br>
+    <label class="option">
+        <input type="radio" name="quizz" id="2" value="The World Wide Web Consortium">
+        <span>The World Wide Web Consortium</span>
+    </label>
+    <br>
+    <label class="option">
+        <input type="radio" name="quizz" id="3" value="Mozilla">
+        <span>Mozilla</span>
+    </label>
+    
+</div>
+
+
+<div id="que_text3">
+    <span>Q3. What does CSS stand for?</span>
+</div>
+<div id="option_list3">
+    <label class="option">
+        
+        <input type="radio" name="quizzz" id="1" value="Cascading Style Sheets">
+        <span>Cascading Style Sheets</span>
+    </label>
+    <br>
+    <label class="option">
+        <input type="radio" name="quizzz" id="2" value="Computer Style Sheets">
+        <span>Computer Style Sheets</span>
+    </label>
+    <br>
+    <label class="option">
+        <input type="radio" name="quizzz" id="3" value="Colorful Style Sheets">
+        <span>Colorful Style Sheets</span>
+    </label>
+    
+</div>
+
+
+
+<div id="que_text4">
+    <span>Q4. Which class provides a responsive fixed width container?</span>
+    </div>
+<div id="option_list4">
+    <label class="option">
+        
+        <input type="radio" name="quizzzz" id="1" value=".Container-Fluid">
+        <span>.Container-Fluid</span>
+    </label>
+    <br>
+    <label class="option">
+        <input type="radio" name="quizzzz" id="2" value=".Container">
+        <span>.Container</span>
+    </label>
+    <br>
+    <label class="option">
+        <input type="radio" name="quizzzz" id="3" value=".Container-Fixed">
+        <span>.Container-Fixed</span>
+    </label>
+    
+</div>
+
+
+<div id="que_text5">
+    <span>Q5. How do you insert COMMENTS in Python code?</span>
+</div>
+<div id="option_list5">
+    <label class="option">
+        
+        <input type="radio" name="quizzzzz" id="1" value="/*This is a Comment*/">
+        <span>/*This is a Comment*/</span>
+    </label>
+    <br>
+    <label class="option">
+        <input type="radio" name="quizzzzz" id="2" value="//This is a Comment">
+        <span>//This is a Comment</span>
+    </label>
+    <br>
+    <label class="option">
+        <input type="radio" name="quizzzzz" id="3" value="#This is a Comment">
+        <span>#This is a Comment</span>
+    </label>
+    
+</div>
+
+<div id="NextBtn">
+    <button id="Nxt" onclick="NxT()">Next ></button>
+</div>
+<div id="NextBtn2">
+    <button id="Nxt2" onclick="NxT2()">Next ></button>
+</div>
+<div id="NextBtn3">
+    <button id="Nxt3" onclick="NxT3()">Next ></button>
+</div>
+<div id="NextBtn4">
+    <button id="Nxt4" onclick="NxT4()">Next ></button>
+</div>
+<div id="NextBtn5">
+    <button id="Nxt5" onclick="NxT5()">Next ></button>
+</div>
+
+<!-- i will get the value of span text {innerText}, then i will be comparing it with my prestored value -->
+<!-- the value from radio should be get by a onclick function then it should be stored into a variable that variable shold be compared with my prestored object's value -->
+
+<!--  when the user click on the continue button, the rules, and the continue button will be displayed none but the continue btn will also redirect the user to the question1, then on the user after selecting his answer will click the next btn, the next btn will stay on his same place while displaying none the que1 and permitting the que2 to be displayed! -->
+
+
+<!-- remember btns task is just to switch the question while the answer of the user will be stored into a variable -->
+<!-- btns will also determine the users answer{ the answer user selected on checked on } -->
+<!-- pick the class of the next btn and then store the radio value inside the onclick function of the btn-->
+<div id="results">
+    
+</div>
+
+
+
+
+    <script src="Quiz.js"></script>
+    
+</body>
+</html>
