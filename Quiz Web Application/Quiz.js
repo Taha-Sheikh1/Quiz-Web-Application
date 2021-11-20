@@ -69,12 +69,6 @@ const QueDataBase = {
  }
 
 
-// set time out for the rules which have to be displayed til 5 sec
-
-// when i click on the contine btn i want the user to be redirected towards the q1
-// then after wards the q ans will be stored with the users answers
-// set up your own data base compare the db with the users db
-
 
 function ClickedContinueBtn(event) {
    
